@@ -1,0 +1,135 @@
+\hypertarget{classgameboard_1_1_game_board}{}\section{gameboard.\+Game\+Board Class Reference}
+\label{classgameboard_1_1_game_board}\index{gameboard.\+Game\+Board@{gameboard.\+Game\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgameboard_1_1_game_board_a2744a1969fe37986c4026beec995adec}\label{classgameboard_1_1_game_board_a2744a1969fe37986c4026beec995adec}} 
+{\bfseries Game\+Board} (int num\+Of\+Rows, int num\+Of\+Cols)
+\item 
+void \mbox{\hyperlink{classgameboard_1_1_game_board_a6e74eee1e3ec913341e6f440064d0f80}{place\+Standard\+Pieces}} ()
+\item 
+void \mbox{\hyperlink{classgameboard_1_1_game_board_ae7f2394074cc527b4ed933d562f08f06}{place\+Custom\+Pieces}} ()
+\item 
+boolean \mbox{\hyperlink{classgameboard_1_1_game_board_aee63d4310ef2ea7cb177013eed310b40}{place\+Piece}} (\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} piece)
+\item 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classgameboard_1_1_game_board_a368adac08213b4311a2897a273acc118}{execute\+Move}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move)
+\item 
+void \mbox{\hyperlink{classgameboard_1_1_game_board_a82442fc13c1a73e107851235c5cd92a2}{undo\+Move}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move, \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} captured\+Piece)
+\item 
+boolean \mbox{\hyperlink{classgameboard_1_1_game_board_ad7fb7cf5cb3b97770bfaf5c595c5630b}{is\+Valid\+Coordinates}} (int row\+Index, int col\+Index)
+\item 
+int \mbox{\hyperlink{classgameboard_1_1_game_board_a6b108da59e192efeb24937121ff160ba}{get\+Num\+Of\+Rows}} ()
+\item 
+int \mbox{\hyperlink{classgameboard_1_1_game_board_a049d4164c15b7a60f23b12accd0c1e15}{get\+Num\+Of\+Cols}} ()
+\item 
+Set$<$ \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} $>$ \mbox{\hyperlink{classgameboard_1_1_game_board_a6dbc8479a689353cfde617056007b5f1}{get\+Black\+Pieces}} ()
+\item 
+Set$<$ \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} $>$ \mbox{\hyperlink{classgameboard_1_1_game_board_a5c9d9bdb8c155fbc01c72760b33dba1e}{get\+White\+Pieces}} ()
+\item 
+\mbox{\hyperlink{classgameboard_1_1_square}{Square}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classgameboard_1_1_game_board_a862261920d74b60acd609bfc7d1b1bc2}{get\+Squares}} ()
+\item 
+\mbox{\hyperlink{classgameboard_1_1_square}{Square}} \mbox{\hyperlink{classgameboard_1_1_game_board_a9a1fa2f3221dc4705f492166ce9dd071}{get\+Square}} (int row, int col)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a game board of the chess game Created by Siyang\+Liu on 2018/2/2. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgameboard_1_1_game_board_a368adac08213b4311a2897a273acc118}\label{classgameboard_1_1_game_board_a368adac08213b4311a2897a273acc118}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!execute\+Move@{execute\+Move}}
+\index{execute\+Move@{execute\+Move}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{execute\+Move()}{executeMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} gameboard.\+Game\+Board.\+execute\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move }\end{DoxyParamCaption})}
+
+Executes the given move in the board 
+\begin{DoxyParams}{Parameters}
+{\em move} & is Guaranteed to be a valid move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the captured piece after the execution of the given move 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgameboard_1_1_game_board_a6dbc8479a689353cfde617056007b5f1}\label{classgameboard_1_1_game_board_a6dbc8479a689353cfde617056007b5f1}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+Black\+Pieces@{get\+Black\+Pieces}}
+\index{get\+Black\+Pieces@{get\+Black\+Pieces}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+Black\+Pieces()}{getBlackPieces()}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}$>$ gameboard.\+Game\+Board.\+get\+Black\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the black pieces of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_a049d4164c15b7a60f23b12accd0c1e15}\label{classgameboard_1_1_game_board_a049d4164c15b7a60f23b12accd0c1e15}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+Num\+Of\+Cols@{get\+Num\+Of\+Cols}}
+\index{get\+Num\+Of\+Cols@{get\+Num\+Of\+Cols}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+Num\+Of\+Cols()}{getNumOfCols()}}
+{\footnotesize\ttfamily int gameboard.\+Game\+Board.\+get\+Num\+Of\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the number of cols of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_a6b108da59e192efeb24937121ff160ba}\label{classgameboard_1_1_game_board_a6b108da59e192efeb24937121ff160ba}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+Num\+Of\+Rows@{get\+Num\+Of\+Rows}}
+\index{get\+Num\+Of\+Rows@{get\+Num\+Of\+Rows}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+Num\+Of\+Rows()}{getNumOfRows()}}
+{\footnotesize\ttfamily int gameboard.\+Game\+Board.\+get\+Num\+Of\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the number of rows of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_a9a1fa2f3221dc4705f492166ce9dd071}\label{classgameboard_1_1_game_board_a9a1fa2f3221dc4705f492166ce9dd071}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+Square()}{getSquare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgameboard_1_1_square}{Square}} gameboard.\+Game\+Board.\+get\+Square (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+gets the the square at the given location of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_a862261920d74b60acd609bfc7d1b1bc2}\label{classgameboard_1_1_game_board_a862261920d74b60acd609bfc7d1b1bc2}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+Squares@{get\+Squares}}
+\index{get\+Squares@{get\+Squares}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+Squares()}{getSquares()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgameboard_1_1_square}{Square}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} gameboard.\+Game\+Board.\+get\+Squares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the square array of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_a5c9d9bdb8c155fbc01c72760b33dba1e}\label{classgameboard_1_1_game_board_a5c9d9bdb8c155fbc01c72760b33dba1e}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!get\+White\+Pieces@{get\+White\+Pieces}}
+\index{get\+White\+Pieces@{get\+White\+Pieces}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{get\+White\+Pieces()}{getWhitePieces()}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}$>$ gameboard.\+Game\+Board.\+get\+White\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the white pieces of the game board \mbox{\Hypertarget{classgameboard_1_1_game_board_ad7fb7cf5cb3b97770bfaf5c595c5630b}\label{classgameboard_1_1_game_board_ad7fb7cf5cb3b97770bfaf5c595c5630b}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!is\+Valid\+Coordinates@{is\+Valid\+Coordinates}}
+\index{is\+Valid\+Coordinates@{is\+Valid\+Coordinates}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{is\+Valid\+Coordinates()}{isValidCoordinates()}}
+{\footnotesize\ttfamily boolean gameboard.\+Game\+Board.\+is\+Valid\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{row\+Index,  }\item[{int}]{col\+Index }\end{DoxyParamCaption})}
+
+checks if the given coordinates are valid in the board \mbox{\Hypertarget{classgameboard_1_1_game_board_ae7f2394074cc527b4ed933d562f08f06}\label{classgameboard_1_1_game_board_ae7f2394074cc527b4ed933d562f08f06}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!place\+Custom\+Pieces@{place\+Custom\+Pieces}}
+\index{place\+Custom\+Pieces@{place\+Custom\+Pieces}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{place\+Custom\+Pieces()}{placeCustomPieces()}}
+{\footnotesize\ttfamily void gameboard.\+Game\+Board.\+place\+Custom\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Places the initial pieces of a standard chess game onto the board \mbox{\Hypertarget{classgameboard_1_1_game_board_aee63d4310ef2ea7cb177013eed310b40}\label{classgameboard_1_1_game_board_aee63d4310ef2ea7cb177013eed310b40}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!place\+Piece@{place\+Piece}}
+\index{place\+Piece@{place\+Piece}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{place\+Piece()}{placePiece()}}
+{\footnotesize\ttfamily boolean gameboard.\+Game\+Board.\+place\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}}]{piece }\end{DoxyParamCaption})}
+
+Places the given piece onto the board in specified location 
+\begin{DoxyParams}{Parameters}
+{\em piece} & the piece to place onto the board cannot be null \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgameboard_1_1_game_board_a6e74eee1e3ec913341e6f440064d0f80}\label{classgameboard_1_1_game_board_a6e74eee1e3ec913341e6f440064d0f80}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!place\+Standard\+Pieces@{place\+Standard\+Pieces}}
+\index{place\+Standard\+Pieces@{place\+Standard\+Pieces}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{place\+Standard\+Pieces()}{placeStandardPieces()}}
+{\footnotesize\ttfamily void gameboard.\+Game\+Board.\+place\+Standard\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Places the initial pieces of a standard chess game onto the board \mbox{\Hypertarget{classgameboard_1_1_game_board_a82442fc13c1a73e107851235c5cd92a2}\label{classgameboard_1_1_game_board_a82442fc13c1a73e107851235c5cd92a2}} 
+\index{gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}!undo\+Move@{undo\+Move}}
+\index{undo\+Move@{undo\+Move}!gameboard\+::\+Game\+Board@{gameboard\+::\+Game\+Board}}
+\subsubsection{\texorpdfstring{undo\+Move()}{undoMove()}}
+{\footnotesize\ttfamily void gameboard.\+Game\+Board.\+undo\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move,  }\item[{\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}}]{captured\+Piece }\end{DoxyParamCaption})}
+
+Undoes the given move in the board 
+\begin{DoxyParams}{Parameters}
+{\em move} & the move to undo and was guaranteed to be a valid move \\
+\hline
+{\em captured\+Piece} & the piece capture after the move was executed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gameboard/Game\+Board.\+java\end{DoxyCompactItemize}

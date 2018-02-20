@@ -1,0 +1,80 @@
+\hypertarget{classtest_1_1_piece_test}{}\section{test.\+Piece\+Test Class Reference}
+\label{classtest_1_1_piece_test}\index{test.\+Piece\+Test@{test.\+Piece\+Test}}
+Inheritance diagram for test.\+Piece\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classtest_1_1_piece_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtest_1_1_piece_test_a334090be857c7b0085466dd784768748}\label{classtest_1_1_piece_test_a334090be857c7b0085466dd784768748}} 
+void {\bfseries build\+Piece\+For\+Testing} ()
+\item 
+void \mbox{\hyperlink{classtest_1_1_piece_test_a4680ac39911c714af4402657d7b5a3e2}{Valid\+Constructor1}} ()  throws Exception 
+\item 
+abstract void \mbox{\hyperlink{classtest_1_1_piece_test_a3c841ee578a23ea6162afd09e09434cd}{Valid\+Constructor2}} ()  throws Exception
+\item 
+void \mbox{\hyperlink{classtest_1_1_piece_test_aaf5df7af55f8bbcb89bd2554b1876709}{move}} ()  throws Exception 
+\item 
+abstract void \mbox{\hyperlink{classtest_1_1_piece_test_a8d83b20ef3c6fe8d2acd692b8dedb551}{compute\+Valid\+Moves}} ()  throws Exception
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classtest_1_1_piece_test_a90a462bad11a172acd27d1b18e21ee15}{get\+Concrete}} (Piece.\+Piece\+Color piece\+Color, int coordinate\+Row, int coordinate\+Col)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtest_1_1_piece_test_a567392fa471de32c6eee66f3fd6f069b}\label{classtest_1_1_piece_test_a567392fa471de32c6eee66f3fd6f069b}} 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} {\bfseries black\+Piece}
+\item 
+\mbox{\Hypertarget{classtest_1_1_piece_test_a8104ae553d8aa8bc7ec571612b1ee328}\label{classtest_1_1_piece_test_a8104ae553d8aa8bc7ec571612b1ee328}} 
+\mbox{\hyperlink{classpieces_1_1_piece}{Piece}} {\bfseries white\+Piece}
+\item 
+\mbox{\Hypertarget{classtest_1_1_piece_test_a16d1f0aea9e40fc91717bc8c74aaaa2e}\label{classtest_1_1_piece_test_a16d1f0aea9e40fc91717bc8c74aaaa2e}} 
+\mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} {\bfseries board}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Test for the operations of a Piece Created by Siyang\+Liu on 2018/2/3. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest_1_1_piece_test_a8d83b20ef3c6fe8d2acd692b8dedb551}\label{classtest_1_1_piece_test_a8d83b20ef3c6fe8d2acd692b8dedb551}} 
+\index{test\+::\+Piece\+Test@{test\+::\+Piece\+Test}!compute\+Valid\+Moves@{compute\+Valid\+Moves}}
+\index{compute\+Valid\+Moves@{compute\+Valid\+Moves}!test\+::\+Piece\+Test@{test\+::\+Piece\+Test}}
+\subsubsection{\texorpdfstring{compute\+Valid\+Moves()}{computeValidMoves()}}
+{\footnotesize\ttfamily abstract void test.\+Piece\+Test.\+compute\+Valid\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Test if the all valid moves are computed correctly \mbox{\Hypertarget{classtest_1_1_piece_test_a90a462bad11a172acd27d1b18e21ee15}\label{classtest_1_1_piece_test_a90a462bad11a172acd27d1b18e21ee15}} 
+\index{test\+::\+Piece\+Test@{test\+::\+Piece\+Test}!get\+Concrete@{get\+Concrete}}
+\index{get\+Concrete@{get\+Concrete}!test\+::\+Piece\+Test@{test\+::\+Piece\+Test}}
+\subsubsection{\texorpdfstring{get\+Concrete()}{getConcrete()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} test.\+Piece\+Test.\+get\+Concrete (\begin{DoxyParamCaption}\item[{Piece.\+Piece\+Color}]{piece\+Color,  }\item[{int}]{coordinate\+Row,  }\item[{int}]{coordinate\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Constructs a concrete piece with one of the piece type in chess \mbox{\Hypertarget{classtest_1_1_piece_test_aaf5df7af55f8bbcb89bd2554b1876709}\label{classtest_1_1_piece_test_aaf5df7af55f8bbcb89bd2554b1876709}} 
+\index{test\+::\+Piece\+Test@{test\+::\+Piece\+Test}!move@{move}}
+\index{move@{move}!test\+::\+Piece\+Test@{test\+::\+Piece\+Test}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void test.\+Piece\+Test.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test if the resulting board is correct after the execute of a valid move \mbox{\Hypertarget{classtest_1_1_piece_test_a4680ac39911c714af4402657d7b5a3e2}\label{classtest_1_1_piece_test_a4680ac39911c714af4402657d7b5a3e2}} 
+\index{test\+::\+Piece\+Test@{test\+::\+Piece\+Test}!Valid\+Constructor1@{Valid\+Constructor1}}
+\index{Valid\+Constructor1@{Valid\+Constructor1}!test\+::\+Piece\+Test@{test\+::\+Piece\+Test}}
+\subsubsection{\texorpdfstring{Valid\+Constructor1()}{ValidConstructor1()}}
+{\footnotesize\ttfamily void test.\+Piece\+Test.\+Valid\+Constructor1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+test the instance fields except piece\+Type after construction \mbox{\Hypertarget{classtest_1_1_piece_test_a3c841ee578a23ea6162afd09e09434cd}\label{classtest_1_1_piece_test_a3c841ee578a23ea6162afd09e09434cd}} 
+\index{test\+::\+Piece\+Test@{test\+::\+Piece\+Test}!Valid\+Constructor2@{Valid\+Constructor2}}
+\index{Valid\+Constructor2@{Valid\+Constructor2}!test\+::\+Piece\+Test@{test\+::\+Piece\+Test}}
+\subsubsection{\texorpdfstring{Valid\+Constructor2()}{ValidConstructor2()}}
+{\footnotesize\ttfamily abstract void test.\+Piece\+Test.\+Valid\+Constructor2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+test the piece\+Type field after construction 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/test/Piece\+Test.\+java\end{DoxyCompactItemize}

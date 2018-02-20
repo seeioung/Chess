@@ -1,0 +1,128 @@
+\hypertarget{classgui_1_1_game}{}\section{gui.\+Game Class Reference}
+\label{classgui_1_1_game}\index{gui.\+Game@{gui.\+Game}}
+Inheritance diagram for gui.\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1_game}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumgui_1_1_game_1_1_game_position}{Game\+Position}}
+\item 
+class \mbox{\hyperlink{classgui_1_1_game_1_1_game_result}{Game\+Result}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgui_1_1_game_a254e8cb4da933dad9ae00a300f07a1a4}\label{classgui_1_1_game_a254e8cb4da933dad9ae00a300f07a1a4}} 
+{\bfseries Game} (int num\+Of\+Rows, int num\+Of\+Cols)
+\item 
+boolean \mbox{\hyperlink{classgui_1_1_game_a2ad737de5ea0e5ad722f8519ff771617}{process}} (int\mbox{[}$\,$\mbox{]} start, int\mbox{[}$\,$\mbox{]} dest)
+\item 
+void \mbox{\hyperlink{classgui_1_1_game_acde5ae47d364b6bddfc9be9fc535b8cc}{init\+Standard\+Game}} ()
+\item 
+void \mbox{\hyperlink{classgui_1_1_game_a74895d53bf09abcd355009defffb4303}{init\+Custom\+Game}} ()
+\item 
+boolean \mbox{\hyperlink{classgui_1_1_game_a451d11ef3789be8a74aae464c1fbfef3}{white\+Turn}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move)
+\item 
+boolean \mbox{\hyperlink{classgui_1_1_game_a9f59968c4a6041a7e18a2898122a0f73}{black\+Turn}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move)
+\item 
+void \mbox{\hyperlink{classgui_1_1_game_ae988eca0ead138d87285ea93d870385d}{undo}} ()
+\item 
+void \mbox{\hyperlink{classgui_1_1_game_a674b55155cbba7f976aa95caa017ee3b}{restart}} (boolean standard)
+\item 
+\mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} \mbox{\hyperlink{classgui_1_1_game_afdc30ea2b00b6b06e255d3420d5c9e67}{get\+Board}} ()
+\item 
+\mbox{\hyperlink{classplayers_1_1_player}{Player}} \mbox{\hyperlink{classgui_1_1_game_a90a639909c028168666c3db0ac058610}{get\+White\+Player}} ()
+\item 
+\mbox{\hyperlink{classplayers_1_1_player}{Player}} \mbox{\hyperlink{classgui_1_1_game_a4fa4bff17684c1f215f0925e6266aeb0}{get\+Black\+Player}} ()
+\item 
+\mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} \mbox{\hyperlink{classgui_1_1_game_a7e5a9526328a3098b37bd3ea32f8359f}{get\+Current\+Turn}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by Siyang\+Liu on 2018/2/2. Represents a chess game 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui_1_1_game_a9f59968c4a6041a7e18a2898122a0f73}\label{classgui_1_1_game_a9f59968c4a6041a7e18a2898122a0f73}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!black\+Turn@{black\+Turn}}
+\index{black\+Turn@{black\+Turn}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{black\+Turn()}{blackTurn()}}
+{\footnotesize\ttfamily boolean gui.\+Game.\+black\+Turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move }\end{DoxyParamCaption})}
+
+let black player to move \mbox{\Hypertarget{classgui_1_1_game_a4fa4bff17684c1f215f0925e6266aeb0}\label{classgui_1_1_game_a4fa4bff17684c1f215f0925e6266aeb0}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!get\+Black\+Player@{get\+Black\+Player}}
+\index{get\+Black\+Player@{get\+Black\+Player}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Black\+Player()}{getBlackPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplayers_1_1_player}{Player}} gui.\+Game.\+get\+Black\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the black player of the game \mbox{\Hypertarget{classgui_1_1_game_afdc30ea2b00b6b06e255d3420d5c9e67}\label{classgui_1_1_game_afdc30ea2b00b6b06e255d3420d5c9e67}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!get\+Board@{get\+Board}}
+\index{get\+Board@{get\+Board}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Board()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} gui.\+Game.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the board of the game \mbox{\Hypertarget{classgui_1_1_game_a7e5a9526328a3098b37bd3ea32f8359f}\label{classgui_1_1_game_a7e5a9526328a3098b37bd3ea32f8359f}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!get\+Current\+Turn@{get\+Current\+Turn}}
+\index{get\+Current\+Turn@{get\+Current\+Turn}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Current\+Turn()}{getCurrentTurn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} gui.\+Game.\+get\+Current\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the current turn of the game \mbox{\Hypertarget{classgui_1_1_game_a90a639909c028168666c3db0ac058610}\label{classgui_1_1_game_a90a639909c028168666c3db0ac058610}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!get\+White\+Player@{get\+White\+Player}}
+\index{get\+White\+Player@{get\+White\+Player}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+White\+Player()}{getWhitePlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classplayers_1_1_player}{Player}} gui.\+Game.\+get\+White\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+gets the white player of the game \mbox{\Hypertarget{classgui_1_1_game_a74895d53bf09abcd355009defffb4303}\label{classgui_1_1_game_a74895d53bf09abcd355009defffb4303}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!init\+Custom\+Game@{init\+Custom\+Game}}
+\index{init\+Custom\+Game@{init\+Custom\+Game}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{init\+Custom\+Game()}{initCustomGame()}}
+{\footnotesize\ttfamily void gui.\+Game.\+init\+Custom\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the game board with custom chess pieces \mbox{\Hypertarget{classgui_1_1_game_acde5ae47d364b6bddfc9be9fc535b8cc}\label{classgui_1_1_game_acde5ae47d364b6bddfc9be9fc535b8cc}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!init\+Standard\+Game@{init\+Standard\+Game}}
+\index{init\+Standard\+Game@{init\+Standard\+Game}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{init\+Standard\+Game()}{initStandardGame()}}
+{\footnotesize\ttfamily void gui.\+Game.\+init\+Standard\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the game board with standard chess pieces \mbox{\Hypertarget{classgui_1_1_game_a2ad737de5ea0e5ad722f8519ff771617}\label{classgui_1_1_game_a2ad737de5ea0e5ad722f8519ff771617}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!process@{process}}
+\index{process@{process}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean gui.\+Game.\+process (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{start,  }\item[{int \mbox{[}$\,$\mbox{]}}]{dest }\end{DoxyParamCaption})}
+
+Process the move from start to dest \begin{DoxyReturn}{Returns}
+whether the move is legal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgui_1_1_game_a674b55155cbba7f976aa95caa017ee3b}\label{classgui_1_1_game_a674b55155cbba7f976aa95caa017ee3b}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!restart@{restart}}
+\index{restart@{restart}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void gui.\+Game.\+restart (\begin{DoxyParamCaption}\item[{boolean}]{standard }\end{DoxyParamCaption})}
+
+Restart the game 
+\begin{DoxyParams}{Parameters}
+{\em standard} & whether to start a standard game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_game_ae988eca0ead138d87285ea93d870385d}\label{classgui_1_1_game_ae988eca0ead138d87285ea93d870385d}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!undo@{undo}}
+\index{undo@{undo}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily void gui.\+Game.\+undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Undo the last move executed \mbox{\Hypertarget{classgui_1_1_game_a451d11ef3789be8a74aae464c1fbfef3}\label{classgui_1_1_game_a451d11ef3789be8a74aae464c1fbfef3}} 
+\index{gui\+::\+Game@{gui\+::\+Game}!white\+Turn@{white\+Turn}}
+\index{white\+Turn@{white\+Turn}!gui\+::\+Game@{gui\+::\+Game}}
+\subsubsection{\texorpdfstring{white\+Turn()}{whiteTurn()}}
+{\footnotesize\ttfamily boolean gui.\+Game.\+white\+Turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move }\end{DoxyParamCaption})}
+
+let white player to move 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/Game.\+java\end{DoxyCompactItemize}

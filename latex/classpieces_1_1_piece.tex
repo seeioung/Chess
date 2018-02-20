@@ -1,0 +1,114 @@
+\hypertarget{classpieces_1_1_piece}{}\section{pieces.\+Piece Class Reference}
+\label{classpieces_1_1_piece}\index{pieces.\+Piece@{pieces.\+Piece}}
+Inheritance diagram for pieces.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classpieces_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}}
+\item 
+enum \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_type}{Piece\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classpieces_1_1_piece_a24536ff95674905f18a7fd9fadde52ce}{is\+Valid\+Move}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move)
+\item 
+abstract List$<$ \mbox{\hyperlink{classpieces_1_1_move}{Move}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_ab9a0e46deaaa05e8bea7a59ccda801ab}{compute\+Valid\+Moves}} (final \mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} board)
+\item 
+void \mbox{\hyperlink{classpieces_1_1_piece_abad4a76991f2de3a31187c2a74c2f870}{update\+Piece\+Coordinates}} (int dest\+Row, int dest\+Col)
+\item 
+\mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} \mbox{\hyperlink{classpieces_1_1_piece_a3442ea119c005e9736d5cd53efd499e8}{get\+Piece\+Color}} ()
+\item 
+\mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_type}{Piece\+Type}} \mbox{\hyperlink{classpieces_1_1_piece_acd116a1f6e774bc7d358780c098fadcb}{get\+Piece\+Type}} ()
+\item 
+abstract String \mbox{\hyperlink{classpieces_1_1_piece_a12cbd905036c427015bd3c62fdb17036}{get\+String}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a298b5268de024c41b2af48306fa40e03}{get\+Row\+Index}} ()
+\item 
+int \mbox{\hyperlink{classpieces_1_1_piece_a5ac1137f5b634718b310ba4b01d3a592}{get\+Col\+Index}} ()
+\item 
+List$<$ \mbox{\hyperlink{classpieces_1_1_move}{Move}} $>$ \mbox{\hyperlink{classpieces_1_1_piece_aa4bfcbf5e6e3c1374c0ca3af0c64b87d}{get\+Valid\+Moves}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpieces_1_1_piece_aa02280c819d5ab7472b50a1026ca2e9d}\label{classpieces_1_1_piece_aa02280c819d5ab7472b50a1026ca2e9d}} 
+{\bfseries Piece} (\mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} piece\+Color, int row\+Index, int col\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a piece in the chess game Created by Siyang\+Liu on 2018/2/2. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpieces_1_1_piece_ab9a0e46deaaa05e8bea7a59ccda801ab}\label{classpieces_1_1_piece_ab9a0e46deaaa05e8bea7a59ccda801ab}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!compute\+Valid\+Moves@{compute\+Valid\+Moves}}
+\index{compute\+Valid\+Moves@{compute\+Valid\+Moves}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{compute\+Valid\+Moves()}{computeValidMoves()}}
+{\footnotesize\ttfamily abstract List$<$\mbox{\hyperlink{classpieces_1_1_move}{Move}}$>$ pieces.\+Piece.\+compute\+Valid\+Moves (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}}}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Computes all valid moves of the piece given the current board \mbox{\Hypertarget{classpieces_1_1_piece_a5ac1137f5b634718b310ba4b01d3a592}\label{classpieces_1_1_piece_a5ac1137f5b634718b310ba4b01d3a592}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+Col\+Index@{get\+Col\+Index}}
+\index{get\+Col\+Index@{get\+Col\+Index}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Col\+Index()}{getColIndex()}}
+{\footnotesize\ttfamily int pieces.\+Piece.\+get\+Col\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the column index of the piece in the board \mbox{\Hypertarget{classpieces_1_1_piece_a3442ea119c005e9736d5cd53efd499e8}\label{classpieces_1_1_piece_a3442ea119c005e9736d5cd53efd499e8}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+Piece\+Color@{get\+Piece\+Color}}
+\index{get\+Piece\+Color@{get\+Piece\+Color}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Piece\+Color()}{getPieceColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} pieces.\+Piece.\+get\+Piece\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the color of the piece \mbox{\Hypertarget{classpieces_1_1_piece_acd116a1f6e774bc7d358780c098fadcb}\label{classpieces_1_1_piece_acd116a1f6e774bc7d358780c098fadcb}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+Piece\+Type@{get\+Piece\+Type}}
+\index{get\+Piece\+Type@{get\+Piece\+Type}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Piece\+Type()}{getPieceType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_type}{Piece\+Type}} pieces.\+Piece.\+get\+Piece\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the type of the piece \mbox{\Hypertarget{classpieces_1_1_piece_a298b5268de024c41b2af48306fa40e03}\label{classpieces_1_1_piece_a298b5268de024c41b2af48306fa40e03}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+Row\+Index@{get\+Row\+Index}}
+\index{get\+Row\+Index@{get\+Row\+Index}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Row\+Index()}{getRowIndex()}}
+{\footnotesize\ttfamily int pieces.\+Piece.\+get\+Row\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the row index of the piece in the board \mbox{\Hypertarget{classpieces_1_1_piece_a12cbd905036c427015bd3c62fdb17036}\label{classpieces_1_1_piece_a12cbd905036c427015bd3c62fdb17036}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}}
+{\footnotesize\ttfamily abstract String pieces.\+Piece.\+get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Gets the string of the piece all lower case with \+\_\+ between color and type \mbox{\Hypertarget{classpieces_1_1_piece_aa4bfcbf5e6e3c1374c0ca3af0c64b87d}\label{classpieces_1_1_piece_aa4bfcbf5e6e3c1374c0ca3af0c64b87d}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!get\+Valid\+Moves@{get\+Valid\+Moves}}
+\index{get\+Valid\+Moves@{get\+Valid\+Moves}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Valid\+Moves()}{getValidMoves()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classpieces_1_1_move}{Move}}$>$ pieces.\+Piece.\+get\+Valid\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the valid moves of the piece in the board \mbox{\Hypertarget{classpieces_1_1_piece_a24536ff95674905f18a7fd9fadde52ce}\label{classpieces_1_1_piece_a24536ff95674905f18a7fd9fadde52ce}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!is\+Valid\+Move@{is\+Valid\+Move}}
+\index{is\+Valid\+Move@{is\+Valid\+Move}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Valid\+Move()}{isValidMove()}}
+{\footnotesize\ttfamily boolean pieces.\+Piece.\+is\+Valid\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move }\end{DoxyParamCaption})}
+
+Checks if the move of the piece is valid \mbox{\Hypertarget{classpieces_1_1_piece_abad4a76991f2de3a31187c2a74c2f870}\label{classpieces_1_1_piece_abad4a76991f2de3a31187c2a74c2f870}} 
+\index{pieces\+::\+Piece@{pieces\+::\+Piece}!update\+Piece\+Coordinates@{update\+Piece\+Coordinates}}
+\index{update\+Piece\+Coordinates@{update\+Piece\+Coordinates}!pieces\+::\+Piece@{pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{update\+Piece\+Coordinates()}{updatePieceCoordinates()}}
+{\footnotesize\ttfamily void pieces.\+Piece.\+update\+Piece\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{dest\+Row,  }\item[{int}]{dest\+Col }\end{DoxyParamCaption})}
+
+Updates the coordinates of the piece in the game board Has to follow up with the call to compute\+Valid\+Moves(board) to update the piece 
+\begin{DoxyParams}{Parameters}
+{\em dest\+Row} & guaranteed to be valid row \\
+\hline
+{\em dest\+Col} & guaranteed to be valid col \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pieces/Piece.\+java\end{DoxyCompactItemize}

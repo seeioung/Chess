@@ -1,0 +1,149 @@
+\hypertarget{classgui_1_1_view}{}\section{gui.\+View Class Reference}
+\label{classgui_1_1_view}\index{gui.\+View@{gui.\+View}}
+Inheritance diagram for gui.\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1_view}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Board\+Panel}
+\item 
+class \mbox{\hyperlink{classgui_1_1_view_1_1_score_panel}{Score\+Panel}}
+\item 
+class \mbox{\hyperlink{classgui_1_1_view_1_1_square_panel}{Square\+Panel}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_a0b930eff54b741b4a9c9d666180dec00}{update}} (Observable o, Object arg)
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_af87d7ce351a4529a91bd4cd6215270f3}{add\+Model}} (\mbox{\hyperlink{classgui_1_1_game}{Game}} game)
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_aa348b4e60405ff1a3948e01b3bc1cf16}{add\+Button\+Controller}} (Action\+Listener button\+Controller)
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_a66364784fcbb6df611784d77880e98bb}{add\+Piece\+Controller}} (Mouse\+Listener controller)
+\item 
+Board\+Panel \mbox{\hyperlink{classgui_1_1_view_ad5f7dc8f550cc8895c4da9b5ea8d4b98}{get\+Board\+View}} ()
+\item 
+Component \mbox{\hyperlink{classgui_1_1_view_aeb332c6eee8b72e856b4eae786e4c736}{get\+Window}} ()
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_aef80a66972e0010e3ec6b0cd9899bc05}{set\+Has\+Started}} (boolean has\+Started)
+\item 
+boolean \mbox{\hyperlink{classgui_1_1_view_a958e1dcd8f0a252266b292bff7af26dd}{get\+Has\+Started}} ()
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_a49679332bb9ef013e497a00188bf254d}{set\+White\+Name}} (String white\+Name)
+\item 
+void \mbox{\hyperlink{classgui_1_1_view_afe1af467431c5b0f21bf71ef0b869b21}{set\+Black\+Name}} (String black\+Name)
+\item 
+String \mbox{\hyperlink{classgui_1_1_view_a97fe9c5584520573e63ad4af1988e970}{get\+Black\+Name}} ()
+\item 
+String \mbox{\hyperlink{classgui_1_1_view_a0c82f77f67a8131b03a10d73cb9e5934}{get\+White\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui_1_1_view_aa348b4e60405ff1a3948e01b3bc1cf16}\label{classgui_1_1_view_aa348b4e60405ff1a3948e01b3bc1cf16}} 
+\index{gui\+::\+View@{gui\+::\+View}!add\+Button\+Controller@{add\+Button\+Controller}}
+\index{add\+Button\+Controller@{add\+Button\+Controller}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{add\+Button\+Controller()}{addButtonController()}}
+{\footnotesize\ttfamily void gui.\+View.\+add\+Button\+Controller (\begin{DoxyParamCaption}\item[{Action\+Listener}]{button\+Controller }\end{DoxyParamCaption})}
+
+Add controller to buttons and menu items 
+\begin{DoxyParams}{Parameters}
+{\em button\+Controller} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_view_af87d7ce351a4529a91bd4cd6215270f3}\label{classgui_1_1_view_af87d7ce351a4529a91bd4cd6215270f3}} 
+\index{gui\+::\+View@{gui\+::\+View}!add\+Model@{add\+Model}}
+\index{add\+Model@{add\+Model}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{add\+Model()}{addModel()}}
+{\footnotesize\ttfamily void gui.\+View.\+add\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgui_1_1_game}{Game}}}]{game }\end{DoxyParamCaption})}
+
+Adds the model to the view \mbox{\Hypertarget{classgui_1_1_view_a66364784fcbb6df611784d77880e98bb}\label{classgui_1_1_view_a66364784fcbb6df611784d77880e98bb}} 
+\index{gui\+::\+View@{gui\+::\+View}!add\+Piece\+Controller@{add\+Piece\+Controller}}
+\index{add\+Piece\+Controller@{add\+Piece\+Controller}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{add\+Piece\+Controller()}{addPieceController()}}
+{\footnotesize\ttfamily void gui.\+View.\+add\+Piece\+Controller (\begin{DoxyParamCaption}\item[{Mouse\+Listener}]{controller }\end{DoxyParamCaption})}
+
+Add controller to each square in the board 
+\begin{DoxyParams}{Parameters}
+{\em controller} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_view_a97fe9c5584520573e63ad4af1988e970}\label{classgui_1_1_view_a97fe9c5584520573e63ad4af1988e970}} 
+\index{gui\+::\+View@{gui\+::\+View}!get\+Black\+Name@{get\+Black\+Name}}
+\index{get\+Black\+Name@{get\+Black\+Name}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{get\+Black\+Name()}{getBlackName()}}
+{\footnotesize\ttfamily String gui.\+View.\+get\+Black\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the name of the white player \mbox{\Hypertarget{classgui_1_1_view_ad5f7dc8f550cc8895c4da9b5ea8d4b98}\label{classgui_1_1_view_ad5f7dc8f550cc8895c4da9b5ea8d4b98}} 
+\index{gui\+::\+View@{gui\+::\+View}!get\+Board\+View@{get\+Board\+View}}
+\index{get\+Board\+View@{get\+Board\+View}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{get\+Board\+View()}{getBoardView()}}
+{\footnotesize\ttfamily Board\+Panel gui.\+View.\+get\+Board\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the board panel \mbox{\Hypertarget{classgui_1_1_view_a958e1dcd8f0a252266b292bff7af26dd}\label{classgui_1_1_view_a958e1dcd8f0a252266b292bff7af26dd}} 
+\index{gui\+::\+View@{gui\+::\+View}!get\+Has\+Started@{get\+Has\+Started}}
+\index{get\+Has\+Started@{get\+Has\+Started}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{get\+Has\+Started()}{getHasStarted()}}
+{\footnotesize\ttfamily boolean gui.\+View.\+get\+Has\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns if the game has started \mbox{\Hypertarget{classgui_1_1_view_a0c82f77f67a8131b03a10d73cb9e5934}\label{classgui_1_1_view_a0c82f77f67a8131b03a10d73cb9e5934}} 
+\index{gui\+::\+View@{gui\+::\+View}!get\+White\+Name@{get\+White\+Name}}
+\index{get\+White\+Name@{get\+White\+Name}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{get\+White\+Name()}{getWhiteName()}}
+{\footnotesize\ttfamily String gui.\+View.\+get\+White\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the name of the black player \mbox{\Hypertarget{classgui_1_1_view_aeb332c6eee8b72e856b4eae786e4c736}\label{classgui_1_1_view_aeb332c6eee8b72e856b4eae786e4c736}} 
+\index{gui\+::\+View@{gui\+::\+View}!get\+Window@{get\+Window}}
+\index{get\+Window@{get\+Window}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{get\+Window()}{getWindow()}}
+{\footnotesize\ttfamily Component gui.\+View.\+get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the J\+Frame \mbox{\Hypertarget{classgui_1_1_view_afe1af467431c5b0f21bf71ef0b869b21}\label{classgui_1_1_view_afe1af467431c5b0f21bf71ef0b869b21}} 
+\index{gui\+::\+View@{gui\+::\+View}!set\+Black\+Name@{set\+Black\+Name}}
+\index{set\+Black\+Name@{set\+Black\+Name}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{set\+Black\+Name()}{setBlackName()}}
+{\footnotesize\ttfamily void gui.\+View.\+set\+Black\+Name (\begin{DoxyParamCaption}\item[{String}]{black\+Name }\end{DoxyParamCaption})}
+
+Sets the name of the black player 
+\begin{DoxyParams}{Parameters}
+{\em black\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_view_aef80a66972e0010e3ec6b0cd9899bc05}\label{classgui_1_1_view_aef80a66972e0010e3ec6b0cd9899bc05}} 
+\index{gui\+::\+View@{gui\+::\+View}!set\+Has\+Started@{set\+Has\+Started}}
+\index{set\+Has\+Started@{set\+Has\+Started}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{set\+Has\+Started()}{setHasStarted()}}
+{\footnotesize\ttfamily void gui.\+View.\+set\+Has\+Started (\begin{DoxyParamCaption}\item[{boolean}]{has\+Started }\end{DoxyParamCaption})}
+
+set the status which indicate whether the game has started or not 
+\begin{DoxyParams}{Parameters}
+{\em has\+Started} & the status to update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_view_a49679332bb9ef013e497a00188bf254d}\label{classgui_1_1_view_a49679332bb9ef013e497a00188bf254d}} 
+\index{gui\+::\+View@{gui\+::\+View}!set\+White\+Name@{set\+White\+Name}}
+\index{set\+White\+Name@{set\+White\+Name}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{set\+White\+Name()}{setWhiteName()}}
+{\footnotesize\ttfamily void gui.\+View.\+set\+White\+Name (\begin{DoxyParamCaption}\item[{String}]{white\+Name }\end{DoxyParamCaption})}
+
+Sets the name of the white player 
+\begin{DoxyParams}{Parameters}
+{\em white\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgui_1_1_view_a0b930eff54b741b4a9c9d666180dec00}\label{classgui_1_1_view_a0b930eff54b741b4a9c9d666180dec00}} 
+\index{gui\+::\+View@{gui\+::\+View}!update@{update}}
+\index{update@{update}!gui\+::\+View@{gui\+::\+View}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void gui.\+View.\+update (\begin{DoxyParamCaption}\item[{Observable}]{o,  }\item[{Object}]{arg }\end{DoxyParamCaption})}
+
+Override from Observer, called by the game 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/View.\+java\end{DoxyCompactItemize}

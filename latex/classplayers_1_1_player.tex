@@ -1,0 +1,112 @@
+\hypertarget{classplayers_1_1_player}{}\section{players.\+Player Class Reference}
+\label{classplayers_1_1_player}\index{players.\+Player@{players.\+Player}}
+Inheritance diagram for players.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplayers_1_1_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplayers_1_1_player_ab00ac82acff3bd9f2f2c3a16f8f642ba}\label{classplayers_1_1_player_ab00ac82acff3bd9f2f2c3a16f8f642ba}} 
+{\bfseries Player} (\mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} board)
+\item 
+boolean \mbox{\hyperlink{classplayers_1_1_player_ad9049a1cec91bf5214100286f984cdaa}{move\+Piece}} (\mbox{\hyperlink{classpieces_1_1_move}{Move}} move)
+\item 
+boolean \mbox{\hyperlink{classplayers_1_1_player_a410730e0aede2a7253250ac892fc02e7}{has\+Lost}} ()
+\item 
+boolean \mbox{\hyperlink{classplayers_1_1_player_a5dc5f954097bc57cb2b1a63e1d32d00e}{is\+In\+Checkmate}} ()
+\item 
+boolean \mbox{\hyperlink{classplayers_1_1_player_ad7d20950f08db802354df71058addc8f}{is\+In\+Stalemate}} ()
+\item 
+\mbox{\Hypertarget{classplayers_1_1_player_a591346f361d949a7bbd825a4d764597e}\label{classplayers_1_1_player_a591346f361d949a7bbd825a4d764597e}} 
+void {\bfseries restart} (\mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} board)
+\item 
+\mbox{\Hypertarget{classplayers_1_1_player_a8461737a9f089305a750d4ef19992007}\label{classplayers_1_1_player_a8461737a9f089305a750d4ef19992007}} 
+void {\bfseries add\+Score} ()
+\item 
+\mbox{\Hypertarget{classplayers_1_1_player_adb7c0bb6e8c72d9e16c333ef9e389ca2}\label{classplayers_1_1_player_adb7c0bb6e8c72d9e16c333ef9e389ca2}} 
+int {\bfseries get\+Score} ()
+\item 
+abstract \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} \mbox{\hyperlink{classplayers_1_1_player_a7a8d0f9a4ff654c5e1d936c8069d39ca}{get\+King}} ()
+\item 
+abstract Set$<$ \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} $>$ \mbox{\hyperlink{classplayers_1_1_player_af1c0e492177ecbfa6bdc8e44b968ead3}{get\+Own\+Pieces}} ()
+\item 
+abstract Set$<$ \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} $>$ \mbox{\hyperlink{classplayers_1_1_player_a71b0707e3607a9fdc2d8b94b49be1394}{get\+Opponent\+Pieces}} ()
+\item 
+abstract \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} \mbox{\hyperlink{classplayers_1_1_player_a806f2042576092dced6bf5b9600f7763}{get\+Color}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplayers_1_1_player_a1dd0db71975939835fe192a4062164fe}\label{classplayers_1_1_player_a1dd0db71975939835fe192a4062164fe}} 
+\mbox{\hyperlink{classgameboard_1_1_game_board}{Game\+Board}} {\bfseries board}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a player of the chess game Created by Siyang\+Liu on 2018/2/2. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayers_1_1_player_a806f2042576092dced6bf5b9600f7763}\label{classplayers_1_1_player_a806f2042576092dced6bf5b9600f7763}} 
+\index{players\+::\+Player@{players\+::\+Player}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{enumpieces_1_1_piece_1_1_piece_color}{Piece\+Color}} players.\+Player.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+gets the color of the piece played by the player \mbox{\Hypertarget{classplayers_1_1_player_a7a8d0f9a4ff654c5e1d936c8069d39ca}\label{classplayers_1_1_player_a7a8d0f9a4ff654c5e1d936c8069d39ca}} 
+\index{players\+::\+Player@{players\+::\+Player}!get\+King@{get\+King}}
+\index{get\+King@{get\+King}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{get\+King()}{getKing()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classpieces_1_1_piece}{Piece}} players.\+Player.\+get\+King (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+gets the king of the player \mbox{\Hypertarget{classplayers_1_1_player_a71b0707e3607a9fdc2d8b94b49be1394}\label{classplayers_1_1_player_a71b0707e3607a9fdc2d8b94b49be1394}} 
+\index{players\+::\+Player@{players\+::\+Player}!get\+Opponent\+Pieces@{get\+Opponent\+Pieces}}
+\index{get\+Opponent\+Pieces@{get\+Opponent\+Pieces}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{get\+Opponent\+Pieces()}{getOpponentPieces()}}
+{\footnotesize\ttfamily abstract Set$<$\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}$>$ players.\+Player.\+get\+Opponent\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+gets the set of alive pieces of the opponent player \mbox{\Hypertarget{classplayers_1_1_player_af1c0e492177ecbfa6bdc8e44b968ead3}\label{classplayers_1_1_player_af1c0e492177ecbfa6bdc8e44b968ead3}} 
+\index{players\+::\+Player@{players\+::\+Player}!get\+Own\+Pieces@{get\+Own\+Pieces}}
+\index{get\+Own\+Pieces@{get\+Own\+Pieces}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{get\+Own\+Pieces()}{getOwnPieces()}}
+{\footnotesize\ttfamily abstract Set$<$\mbox{\hyperlink{classpieces_1_1_piece}{Piece}}$>$ players.\+Player.\+get\+Own\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+gets the set of alive pieces of the player \mbox{\Hypertarget{classplayers_1_1_player_a410730e0aede2a7253250ac892fc02e7}\label{classplayers_1_1_player_a410730e0aede2a7253250ac892fc02e7}} 
+\index{players\+::\+Player@{players\+::\+Player}!has\+Lost@{has\+Lost}}
+\index{has\+Lost@{has\+Lost}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{has\+Lost()}{hasLost()}}
+{\footnotesize\ttfamily boolean players.\+Player.\+has\+Lost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the player has lost the game \mbox{\Hypertarget{classplayers_1_1_player_a5dc5f954097bc57cb2b1a63e1d32d00e}\label{classplayers_1_1_player_a5dc5f954097bc57cb2b1a63e1d32d00e}} 
+\index{players\+::\+Player@{players\+::\+Player}!is\+In\+Checkmate@{is\+In\+Checkmate}}
+\index{is\+In\+Checkmate@{is\+In\+Checkmate}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{is\+In\+Checkmate()}{isInCheckmate()}}
+{\footnotesize\ttfamily boolean players.\+Player.\+is\+In\+Checkmate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the player is in checkmate \mbox{\Hypertarget{classplayers_1_1_player_ad7d20950f08db802354df71058addc8f}\label{classplayers_1_1_player_ad7d20950f08db802354df71058addc8f}} 
+\index{players\+::\+Player@{players\+::\+Player}!is\+In\+Stalemate@{is\+In\+Stalemate}}
+\index{is\+In\+Stalemate@{is\+In\+Stalemate}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{is\+In\+Stalemate()}{isInStalemate()}}
+{\footnotesize\ttfamily boolean players.\+Player.\+is\+In\+Stalemate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the player is in stalemate \mbox{\Hypertarget{classplayers_1_1_player_ad9049a1cec91bf5214100286f984cdaa}\label{classplayers_1_1_player_ad9049a1cec91bf5214100286f984cdaa}} 
+\index{players\+::\+Player@{players\+::\+Player}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!players\+::\+Player@{players\+::\+Player}}
+\subsubsection{\texorpdfstring{move\+Piece()}{movePiece()}}
+{\footnotesize\ttfamily boolean players.\+Player.\+move\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpieces_1_1_move}{Move}}}]{move }\end{DoxyParamCaption})}
+
+Moves a piece of the player 
+\begin{DoxyParams}{Parameters}
+{\em move} & the move that the player want to execute (may not be valid) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the move is successfully executed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/players/Player.\+java\end{DoxyCompactItemize}
