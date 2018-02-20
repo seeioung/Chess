@@ -32,12 +32,21 @@ public class Game extends Observable{
 //            throw new Exception("Invalid size of the game board!");
 //        }
         this.board = new GameBoard(numOfRows, numOfCols);
-//        this.board.placeStandardPieces();
         this.whitePlayer = new WhitePlayer(this.board);
         this.blackPlayer = new BlackPlayer(this.board);
         this.currentTurn = WHITE;
         this.undoStack = new LinkedList<>();
     }
+
+    public Game(GameBoard board) {
+        this.board = board;
+        this.whitePlayer = new WhitePlayer(this.board);
+        this.blackPlayer = new BlackPlayer(this.board);
+        this.currentTurn = WHITE;
+        this.undoStack = new LinkedList<>();
+    }
+
+
 
     /**
      * checks if one of the players has won the game

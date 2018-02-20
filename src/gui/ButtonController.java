@@ -90,7 +90,7 @@ public class ButtonController implements ActionListener {
             if (checkbox.isSelected()) {
                 game.initCustomGame();
             } else {
-                game.initStandardGame();
+                game.initStandardGame(); // comment out when doing stalemate test
             }
         }
     }
