@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9775c28b-6666-4814-8170-aae6c4622da1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment1.2/gui/ButtonController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment1.2/gui/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ButtonController.java" afterPath="$PROJECT_DIR$/src/gui/ButtonController.java" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Game.java" afterPath="$PROJECT_DIR$/src/gui/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Main.java" afterPath="$PROJECT_DIR$/src/gui/Main.java" />
-    </list>
+    <list default="true" id="9775c28b-6666-4814-8170-aae6c4622da1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -312,7 +306,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519164677027</updated>
-      <workItem from="1519164683011" duration="3604000" />
+      <workItem from="1519164683011" duration="3759000" />
     </task>
     <servers />
   </component>
@@ -337,7 +331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3604000" />
+    <option name="totallyTimeSpent" value="3759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
