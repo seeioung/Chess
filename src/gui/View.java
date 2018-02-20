@@ -172,10 +172,8 @@ public class View extends JPanel implements Observer {
 
             Game.GamePosition position = result.getPosition();
             if (position == Game.GamePosition.CHECKMATE) {
-                // TODO show the checkmate panel
                 checkMateLabel.setVisible(true);
             } else {
-                // TODO show the stalemate panel
                 stalemateLabel.setVisible(true);
 
             }
@@ -264,9 +262,7 @@ public class View extends JPanel implements Observer {
             buttons.get(3).setVisible(false); // hid the start button in the middle of the board
             checkMateLabel.setVisible(false);
             stalemateLabel.setVisible(false);
-
         }
-
     }
 
     /**

@@ -19,6 +19,7 @@ public class ButtonController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 //        JOptionPane.showMessageDialog(null,"button clicked");
+        view.getBoardView().unhighlight();
 
         Object obj = e.getSource();
         if (obj instanceof JButton) {
@@ -53,9 +54,6 @@ public class ButtonController implements ActionListener {
                     break;
             }
         }
-
-
-
     }
 
 
