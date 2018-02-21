@@ -144,7 +144,7 @@ public class Game extends Observable{
         if (move == null) {
             return;
         }
-        this.board.undoMove(move, move.getToCapture());
+        this.board.undoMove(move);
         currentTurn = move.getPiece().getPieceColor();
         setChanged();
         notifyObservers(new int[]{move.getStartRow(), move.getStartCol(), move.getDestRow(), move.getDestCol()});

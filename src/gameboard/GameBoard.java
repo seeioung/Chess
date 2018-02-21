@@ -31,6 +31,19 @@ public class GameBoard {
         this.blackPieces = new HashSet<>();
     }
 
+//    /**
+//     * copy constructor - make a deep copy of the game
+//     * @param board
+//     */
+//    public GameBoard(GameBoard board) {
+//        this.numOfRows = board.getNumOfRows();
+//        this.numOfCols = board.getNumOfCols();
+//
+//        this.squares = board.squares;
+//        this.whitePieces = new HashSet<>();
+//        this.blackPieces = new HashSet<>();
+//    }
+
     /**
      * Builds a game board with no pieces on it
      */
@@ -88,7 +101,7 @@ public class GameBoard {
         if (row == 1 || row == 6) { // pawn
             if (standard) {
                 newPiece = new Pawn(color, row, col);
-            } else if (col == 1 || col == 6){
+            } else if (col == 0 || col == 7){
                 newPiece = new Hopper(color, row, col);
             } else {
                 newPiece = new Pawn(color, row, col);
@@ -129,7 +142,7 @@ public class GameBoard {
         square.setPiece(piece);
         if (piece.getPieceColor() == BLACK && !blackPieces.contains(piece)) {
             this.blackPieces.add(piece);
-        } else if (!whitePieces.contains(piece)){
+        } else if (piece.getPieceColor() == WHITE && !whitePieces.contains(piece)){
             this.whitePieces.add(piece);
         }
         updateValidMoves();
@@ -150,7 +163,7 @@ public class GameBoard {
      * @param move is Guaranteed to be a valid move
      * @return the captured piece after the execution of the given move
      */
-    public Piece executeMove(Move move) {
+    public void executeMove(Move move) {
         int destRow = move.getDestRow();
         int destCol = move.getDestCol();
         Piece piece = move.getPiece();
@@ -161,13 +174,11 @@ public class GameBoard {
         startSquare.setEmpty();
 
         // update the destination Square
-//        Square destSquare = this.squares[destRow][destCol];
-//        Piece capturedPiece = destSquare.getPiece();
         Piece capturedPiece = move.getToCapture();
         if (capturedPiece != null) {
             if (capturedPiece.getPieceColor() == BLACK) {
                 this.blackPieces.remove(capturedPiece);
-            } else {
+            } else if (capturedPiece.getPieceColor() == WHITE) {
                 this.whitePieces.remove(capturedPiece);
             }
         }
@@ -175,15 +186,16 @@ public class GameBoard {
         destSquare.setEmpty();
         placePiece(piece);
 
-        return capturedPiece;
+        updateValidMoves();
+
     }
 
     /**
      * Undoes the given move in the board
      * @param move the move to undo and was guaranteed to be a valid move
-     * @param capturedPiece the piece capture after the move was executed
+     *
      */
-    public void undoMove(Move move, Piece capturedPiece) {
+    public void undoMove(Move move) {
         int startRow = move.getStartRow();
         int startCol = move.getStartCol();
         int destRow = move.getDestRow();
@@ -197,12 +209,12 @@ public class GameBoard {
         // update the destination Square
         Square destSquare = this.squares[destRow][destCol];
         destSquare.setEmpty();
-        capturedPiece =  move.getToCapture();
+        Piece capturedPiece =  move.getToCapture();
         if (capturedPiece != null) {
             placePiece(capturedPiece);
             if (capturedPiece.getPieceColor() == BLACK) {
                 this.blackPieces.add(capturedPiece);
-            } else {
+            } else if (capturedPiece.getPieceColor() == WHITE) {
                 this.whitePieces.add(capturedPiece);
             }
         }

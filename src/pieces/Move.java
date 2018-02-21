@@ -42,11 +42,15 @@ public class Move {
         Move move = (Move) o;
 
         // Compare the data members and return accordingly
+        boolean retval = toCapture == null ? move.toCapture == null : toCapture.equals(move.toCapture);
+//        boolean retval = true;
+
         return startRow == move.startRow
                 && startCol == move.startCol
                 && destRow == move.destRow
                 && destCol == move.destCol
-                && piece.equals(move.piece);
+                && piece.equals(move.piece)
+                && retval;
     }
 
     public Piece getPiece() {

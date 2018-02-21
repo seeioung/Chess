@@ -44,11 +44,11 @@ public abstract class Player {
      */
     private boolean isInCheckAfterMove(Move move) {
         boolean retval = false;
-        Piece capturedPiece = board.executeMove(move);
+        board.executeMove(move);
         if (isInCheck()) {
             retval = true;
         }
-        board.undoMove(move, capturedPiece);
+        board.undoMove(move);
         return retval;
     }
 
@@ -64,14 +64,95 @@ public abstract class Player {
      * Checks if the player is in checkmate
      */
     public boolean isInCheckmate() {
-        return isInCheck() && !canEscape();
+        System.out.println("Beginning of isIncheckmate");
+        String begin = "";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (board.getSquare(i, j).getPiece() != null) {
+                    begin += board.getSquare(i, j).getPiece().toString() + " ";
+                } else {
+                    begin += "null ";
+
+                }
+            }
+            begin += "\n";
+        }
+
+        boolean retval = isInCheck() && !canEscape();
+
+        System.out.println("End of isIncheckmate");
+
+        String end = "";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (board.getSquare(i, j).getPiece() != null) {
+                    end += board.getSquare(i, j).getPiece().toString() + " ";
+                } else {
+                    end += "null ";
+
+                }
+            }
+            end += "\n";
+        }
+
+        if (!begin.equals(end)) {
+            System.out.println("BUGGGGGGGGG!!!!!");
+            System.out.println(begin);
+            System.out.println();
+
+            System.out.println(end);
+
+        }
+
+        return retval;
+//        return isInCheck() && !canEscape();
     }
 
     /**
      * Checks if the player is in stalemate
      */
     public boolean isInStalemate() {
-        return !isInCheck() && !canEscape();
+        System.out.println("Beginning of isInStalemate");
+        String begin = "";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (board.getSquare(i, j).getPiece() != null) {
+                    begin += board.getSquare(i, j).getPiece().toString() + " ";
+                } else {
+                    begin += "null ";
+
+                }
+            }
+            begin += "\n";
+        }
+
+        boolean retval = !isInCheck() && !canEscape();
+
+        System.out.println("End of isInStale");
+
+        String end = "";
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (board.getSquare(i, j).getPiece() != null) {
+                    end += board.getSquare(i, j).getPiece().toString() + " ";
+                } else {
+                    end += "null ";
+
+                }
+            }
+            end += "\n";
+        }
+
+        if (!begin.equals(end)) {
+            System.out.println("BUGGGGGGGGG!!!!!");
+            System.out.println(begin);
+            System.out.println();
+
+            System.out.println(end);
+
+        }
+
+        return retval;
     }
 
     /**
@@ -79,6 +160,9 @@ public abstract class Player {
      */
     private boolean isInCheck() {
         Piece king = getKing();
+//        if (king == null) {
+//            System.out.println("!!!!!king is null");
+//        }
         List<Piece> opponentPieces = new ArrayList<>(getOpponentPieces());
         for (int p = 0; p < opponentPieces.size(); p++) {
             Piece piece = opponentPieces.get(p);
@@ -86,7 +170,7 @@ public abstract class Player {
 
             for (int i = 0; i < validMoves.size(); i++) {
                 Move move = validMoves.get(i);
-                if (move.getDestRow() == king.getRowIndex() && move.getDestCol() == king.getColIndex()) {
+                if (move.getToCapture() == king) {
                     return true;
                 }
             }
@@ -111,7 +195,7 @@ public abstract class Player {
 //            }
 //            begin += "\n";
 //        }
-
+//
 
         boolean retval = false;
         List<Piece> ownPieces = new ArrayList<>(getOwnPieces());
@@ -120,13 +204,14 @@ public abstract class Player {
             List<Move> validMoves = piece.getValidMoves();
             for (int j = 0; j < validMoves.size(); j++) {
                 Move move = validMoves.get(j);
-                Piece capturedPiece = board.executeMove(move);
+                board.executeMove(move);
                 if (!isInCheck()) {
                     retval = true;
                 }
-                board.undoMove(move, capturedPiece);
+                board.undoMove(move);
             }
         }
+
 
 //        System.out.println("End of canEscape");
 //
@@ -142,7 +227,7 @@ public abstract class Player {
 //            }
 //            end += "\n";
 //        }
-//
+
 //        if (!begin.equals(end)) {
 //            System.out.println("BUGGGGGGGGG!!!!!");
 //            System.out.println(begin);
@@ -152,6 +237,7 @@ public abstract class Player {
 //
 //        }
 
+//        return true;
 
         return retval;
     }
