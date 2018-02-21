@@ -1,13 +1,5 @@
 package gui;
 
-import gameboard.GameBoard;
-import pieces.King;
-import pieces.Piece;
-import pieces.Rook;
-import players.BlackPlayer;
-import players.Player;
-import players.WhitePlayer;
-
 public class Main {
 
     /**
@@ -15,13 +7,6 @@ public class Main {
      * @param args
      */
     public static void main(String[] args){
-//        // construct game to test stalemate
-//        GameBoard board = new GameBoard(8,8);
-//        board.placePiece(new King(Piece.PieceColor.WHITE, 5,2));
-//        board.placePiece(new Rook(Piece.PieceColor.WHITE, 1,1));
-//        board.placePiece(new King(Piece.PieceColor.BLACK, 7,0));
-//        Game game = new Game(board);
-
         //create Model and View
         Game game = new Game(8, 8);
         View view = new View();

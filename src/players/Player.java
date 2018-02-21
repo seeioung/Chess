@@ -64,95 +64,14 @@ public abstract class Player {
      * Checks if the player is in checkmate
      */
     public boolean isInCheckmate() {
-        System.out.println("Beginning of isIncheckmate");
-        String begin = "";
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                if (board.getSquare(i, j).getPiece() != null) {
-                    begin += board.getSquare(i, j).getPiece().toString() + " ";
-                } else {
-                    begin += "null ";
-
-                }
-            }
-            begin += "\n";
-        }
-
-        boolean retval = isInCheck() && !canEscape();
-
-        System.out.println("End of isIncheckmate");
-
-        String end = "";
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                if (board.getSquare(i, j).getPiece() != null) {
-                    end += board.getSquare(i, j).getPiece().toString() + " ";
-                } else {
-                    end += "null ";
-
-                }
-            }
-            end += "\n";
-        }
-
-        if (!begin.equals(end)) {
-            System.out.println("BUGGGGGGGGG!!!!!");
-            System.out.println(begin);
-            System.out.println();
-
-            System.out.println(end);
-
-        }
-
-        return retval;
-//        return isInCheck() && !canEscape();
+        return isInCheck() && !canEscape();
     }
 
     /**
      * Checks if the player is in stalemate
      */
     public boolean isInStalemate() {
-        System.out.println("Beginning of isInStalemate");
-        String begin = "";
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                if (board.getSquare(i, j).getPiece() != null) {
-                    begin += board.getSquare(i, j).getPiece().toString() + " ";
-                } else {
-                    begin += "null ";
-
-                }
-            }
-            begin += "\n";
-        }
-
-        boolean retval = !isInCheck() && !canEscape();
-
-        System.out.println("End of isInStale");
-
-        String end = "";
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                if (board.getSquare(i, j).getPiece() != null) {
-                    end += board.getSquare(i, j).getPiece().toString() + " ";
-                } else {
-                    end += "null ";
-
-                }
-            }
-            end += "\n";
-        }
-
-        if (!begin.equals(end)) {
-            System.out.println("BUGGGGGGGGG!!!!!");
-            System.out.println(begin);
-            System.out.println();
-
-            System.out.println(end);
-
-        }
-
-        return retval;
+        return !isInCheck() && !canEscape();
     }
 
     /**
@@ -160,9 +79,6 @@ public abstract class Player {
      */
     private boolean isInCheck() {
         Piece king = getKing();
-//        if (king == null) {
-//            System.out.println("!!!!!king is null");
-//        }
         List<Piece> opponentPieces = new ArrayList<>(getOpponentPieces());
         for (int p = 0; p < opponentPieces.size(); p++) {
             Piece piece = opponentPieces.get(p);
@@ -182,21 +98,6 @@ public abstract class Player {
      * Checks if the king will not be in check after one move
      */
     private boolean canEscape() {
-//        System.out.println("Beginning of canEscape");
-//        String begin = "";
-//        for (int i = 0; i < 8; i++) {
-//            for (int j = 0; j < 8; j++) {
-//                if (board.getSquare(i, j).getPiece() != null) {
-//                    begin += board.getSquare(i, j).getPiece().toString() + " ";
-//                } else {
-//                    begin += "null ";
-//
-//                }
-//            }
-//            begin += "\n";
-//        }
-//
-
         boolean retval = false;
         List<Piece> ownPieces = new ArrayList<>(getOwnPieces());
         for (int i = 0; i < ownPieces.size(); i++)  {
@@ -211,34 +112,6 @@ public abstract class Player {
                 board.undoMove(move);
             }
         }
-
-
-//        System.out.println("End of canEscape");
-//
-//        String end = "";
-//        for (int i = 0; i < 8; i++) {
-//            for (int j = 0; j < 8; j++) {
-//                if (board.getSquare(i, j).getPiece() != null) {
-//                    end += board.getSquare(i, j).getPiece().toString() + " ";
-//                } else {
-//                    end += "null ";
-//
-//                }
-//            }
-//            end += "\n";
-//        }
-
-//        if (!begin.equals(end)) {
-//            System.out.println("BUGGGGGGGGG!!!!!");
-//            System.out.println(begin);
-//            System.out.println();
-//
-//            System.out.println(end);
-//
-//        }
-
-//        return true;
-
         return retval;
     }
 

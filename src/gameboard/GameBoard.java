@@ -31,19 +31,6 @@ public class GameBoard {
         this.blackPieces = new HashSet<>();
     }
 
-//    /**
-//     * copy constructor - make a deep copy of the game
-//     * @param board
-//     */
-//    public GameBoard(GameBoard board) {
-//        this.numOfRows = board.getNumOfRows();
-//        this.numOfCols = board.getNumOfCols();
-//
-//        this.squares = board.squares;
-//        this.whitePieces = new HashSet<>();
-//        this.blackPieces = new HashSet<>();
-//    }
-
     /**
      * Builds a game board with no pieces on it
      */

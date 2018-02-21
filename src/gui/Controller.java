@@ -12,7 +12,6 @@ import static gui.Controller.Status.NONE;
 import static gui.Controller.Status.START_SELECTED;
 
 public class Controller implements MouseListener{
-    //Joe: Controller has Model and View hardwired in
     private Game game;
     private View view;
 

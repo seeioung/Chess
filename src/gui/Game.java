@@ -28,9 +28,6 @@ public class Game extends Observable{
 
 
     public Game(int numOfRows, int numOfCols) {
-//        if (numOfRows <= 0 || numOfCols <= 0) {
-//            throw new Exception("Invalid size of the game board!");
-//        }
         this.board = new GameBoard(numOfRows, numOfCols);
         this.whitePlayer = new WhitePlayer(this.board);
         this.blackPlayer = new BlackPlayer(this.board);
